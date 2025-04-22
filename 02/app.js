@@ -9,12 +9,12 @@ for(let i=1; i<10; i++){
 /* rozwiązanie z pętlą while  */
 
 const y = parseInt(prompt('Podaj liczbę do potęgowania'))
-const a = parseInt(prompt('Do jakiej potęgi?'));
+const n = parseInt(prompt('Do jakiej potęgi?'));
 
 let j = 0
-let sum = 0
-while(j < a){
-    sum = y * y
+let sum = 1
+while(j < n){
+    sum *= y
     j++
 }
-console.log(`${y} do potęgi ${a} =`, sum);
+console.log(`${y} do potęgi ${n} =`, sum);
